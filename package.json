@@ -1,0 +1,41 @@
+{
+  "name": "triadacademia",
+  "version": "1.0.0",
+  "description": "API para sistema de academia com biometria",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+  "dev": "nodemon src/components/server.js",
+    "start": "node src/components/server.js", "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:reset": "prisma migrate reset",
+    "prisma:push": "prisma db push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desenjao/triadacademia.git"
+  },
+  "keywords": ["academia", "biometria", "api", "express", "prisma"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desenjao/triadacademia/issues"
+  },
+  "homepage": "https://github.com/desenjao/triadacademia#readme",
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "nodemon": "^3.1.14",
+    "prisma": "5.22.0"
+  }
+}
